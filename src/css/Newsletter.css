@@ -1,0 +1,307 @@
+.full-card {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    width: 54%;
+    box-shadow: hsl(234, 29%, 20%) 0px 48px 100px 0px;
+    border-radius: 3%;
+
+}
+
+.content {
+    font-family: Roboto-regular;
+    margin-left: 8%;
+
+}
+ul{
+    list-style-position: outside;
+}
+
+.text {
+    margin-top: 4%;
+}
+
+.StayUpdated {
+    padding-top: 13%;
+    font-family: Roboto-Bold;
+    font-weight: 700;
+    font-size: 58px;
+}
+
+.list {
+
+    margin-top: 10px;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+/* Set the list image as background image*/
+li::before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+
+    /* Height of the list image*/
+    height: 15px;
+    object-fit: contain;
+    /* Width of the list image*/
+    width: 15px;
+    background-size: contain;
+    background-image: url(
+"../assets/images/icon-list.svg");
+background-repeat: no-repeat;
+
+}
+
+.list-full {
+    margin-top: 5%;
+    
+}
+
+
+.image {
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0px;
+    background: url("../assets/images/illustration-sign-up-desktop.svg");
+    width: 56%;
+    height: 500px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.emailaddress {
+    margin-top: 8%;
+    font-family: 'Roboto-regular';
+    font-size: small;
+    font-weight: 700;
+}
+
+.emailaddress>* {
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+.black {
+    padding: 15px;
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid hsl(235, 18%, 26%);
+}
+
+.black::placeholder {
+
+    font-family: Roboto-regular;
+    color: hsl(231, 7%, 60%);
+    font-size: 16px;
+}
+
+.black:focus {
+    outline: none !important;
+    border-color: rgba(26, 25, 25, 0.441);
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button {
+    padding: 15px;
+    width: 85%;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-family: 'Roboto-regular';
+    border-radius: 5px;
+    margin-bottom: 20%;
+    font-size: 15px;
+    border: 0px;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, hsl(4, 70%, 55%), hsl(4, 100%, 67%));
+    box-shadow: hsl(4, 100%, 67%) 0px 1px 30px 0px;
+    cursor:pointer;
+}
+
+
+.red {
+    padding: 15px;
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid hsl(3, 100%, 75%);
+
+}
+
+.red::placeholder {
+
+    font-family: Roboto-regular;
+    color: hsl(7, 75%, 55%);
+    font-size: 16px;
+}
+
+.red:focus {
+    color: rgb(247, 133, 133);
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+    outline: none !important;
+    border-color: rgb(230, 89, 89);
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:376px) {
+    .full-card {
+
+        display: flex;
+        flex-direction: column-reverse;
+        box-shadow: hsl(0, 0%, 100%) 0px 48px 100px 0px;
+        border-radius: 3%;
+        width: 100%;
+    }
+
+    .content {
+        font-family: Roboto-regular;
+        margin-left: 8%;
+    
+    }
+    
+    .text {
+        margin-top: 4%;
+    }
+    
+    .StayUpdated {
+        padding-top: 0%;
+        font-family: Roboto-Bold;
+        font-weight: 700;
+        font-size: 45px;
+    }
+    
+    .list {
+    
+        margin-top: 10px;
+    
+    }
+    
+    
+  
+    /* Set the list image as background image*/
+    li::before {
+        content: '';
+        display: inline-block;
+        margin-right: 10px;
+    
+        /* Height of the list image*/
+        height: 15px;
+        object-fit: contain;
+        /* Width of the list image*/
+        width: 15px;
+        background-size: contain;
+        background-image: url(
+    "../assets/images/icon-list.svg");
+    background-repeat: no-repeat;
+    
+    }
+    
+    .list-full {
+        margin-top: 5%;
+        margin-right: 4%;
+    }
+    
+    
+    .image {
+    
+        margin-top: -30%;
+        margin-bottom: -10%;
+        margin-left: 0px;
+        background: url("../assets/images/illustration-sign-up-mobile.svg");
+        width: 100%;
+        height:440px;
+        background-repeat: no-repeat;
+        background-size: 100% auto ;
+        background-position:left;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+    
+    
+    .emailaddress {
+        margin-top: 8%;
+        font-family: 'Roboto-regular';
+        font-size: small;
+        font-weight: 700;
+    }
+    
+    .emailaddress>* {
+        margin-top: 10px;
+        margin-bottom: 5%;
+    }
+    
+    .black {
+        padding: 15px;
+        width: 85%;
+        border-radius: 5px;
+        border: 1px solid hsl(235, 18%, 26%);
+    }
+    
+    .black::placeholder {
+    
+        font-family: Roboto-regular;
+        color: hsl(231, 7%, 60%);
+        font-size: 16px;
+    }
+    
+    .black:focus {
+        outline: none !important;
+        border-color: rgba(26, 25, 25, 0.441);
+        font-family: 'Roboto-regular';
+        font-size: 16px;
+    }
+    
+    .button {
+        padding: 15px;
+        width: 85%;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+        font-family: 'Roboto-regular';
+        border-radius: 5px;
+        margin-bottom: 20%;
+        font-size: 15px;
+        border: 0px;
+    }
+    
+    .button:hover {
+        background-image: linear-gradient(to right, hsl(4, 70%, 55%), hsl(4, 100%, 67%));
+        box-shadow: hsl(4, 100%, 67%) 0px 1px 30px 0px;
+    }
+    
+    .red {
+        padding: 15px;
+        width: 85%;
+        border-radius: 5px;
+        border: 1px solid hsl(3, 100%, 75%);
+    
+    }
+    
+    .red::placeholder {
+    
+        font-family: Roboto-regular;
+        color: hsl(7, 75%, 55%);
+        font-size: 16px;
+    }
+    
+    .red:focus {
+        color: rgb(247, 133, 133);
+        font-family: 'Roboto-regular';
+        font-size: 16px;
+        outline: none !important;
+        border-color: rgb(230, 89, 89);
+    }
+}
